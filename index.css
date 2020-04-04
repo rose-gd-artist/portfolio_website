@@ -125,9 +125,6 @@ body {
 	color: #fff;
 	text-decoration: none;
 }
-#navBar a:hover {
-	color: #FF8122;
-}
 #navBar img.logoLink {
     width:25%;
     margin:2vw 3%;
@@ -273,13 +270,19 @@ span.adj {
     color:#4F3E60;
     display:none;
 }
-.num4{
+#aboutHeader{
+    width:90%;
+    height:9vw;
+    margin-top:1vw;
+    margin-left:5%;
+    margin-right:5%;
+    margin-bottom:1vw;
     font-size:4vw;
     margin:2vw 28%;
     float:left;
     text-align: center;
     color:#4F3E60;
-    display:none;
+    display:block;
 }
 .slideRight {
     height: 2vw;
@@ -369,16 +372,23 @@ span.adj {
 .Next {
     clear:both;
 }
+#aboutHeader{
+    width:75%;
+    height:9vw;
+    font-size:4vw;
+    margin:2vw 12.5%;
+    text-align: center;
+    color:#4F3E60;
+    display:block;
+}
 
 #aboutMeGrid {
-    width:89%;
-    clear:both;
+    width:65%;
     margin-top:6vw;
-    margin-left: 10%;
-    margin-right: 10%;
-    display:block;
+    margin-left: 17%;
+    margin-right: 17%;
     font-size: 2.5vw;
-    display: none;
+    display:block;
 }
 
 .aboutHead {
