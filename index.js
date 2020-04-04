@@ -56,6 +56,9 @@ function menuClose(){
 //  
 //window.onload = assignColor()
 
+
+/////////////////// all my variables ///////////////////////
+
 let indexLeftArrow = document.getElementById("indexLeftArrow");
 
 let indexRightArrow = document.getElementById("indexRightArrow");
@@ -150,10 +153,7 @@ document.getElementById("FeWDthumbnailGrid");
 //
 //window.onload = firstCategory()
 
-
-
-
-// Oggi started here
+//////////////// slider on index page ///////////////
 
  let subheads = document.getElementsByClassName("subheadSwop");
 
@@ -175,25 +175,11 @@ document.getElementById("FeWDthumbnailGrid");
   sliderIndex[number].style.display = 'block'
  }
 
-//indexLeftArrow.addEventListener("click", goLeft)
-//indexRightArrow.addEventListener("click", goRight)
 
-// function firstCategory() {
-// 	slider.style.display = indexSubheads[index +2]
-// }
-
-indexLeftArrow.addEventListener("click", function(){
-    goLeft()
-    goLeftGrid()
-    displayGrid()
-    displayTitle()
-});
-indexRightArrow.addEventListener("click", function(){
-    goRight()
-    goRightGrid()
-    displayGrid()
-    displayTitle()
-});
+indexLeftArrow.addEventListener("click", goLeft);
+indexLeftArrow.addEventListener("click", goLeftGrid);
+indexRightArrow.addEventListener("click", goRight);
+indexRightArrow.addEventListener("click", goRightGrid);
 
 function goLeft(){
       index = index - 1;
@@ -230,10 +216,12 @@ function goRightGrid(){
 window.onload = displayTitle(index)
 window.onload = displayGrid(index)
 
-// Oggi finished here
 
 
 
+
+
+/////// click event dots on index slider /////////////
 
 indexSliderDot1.addEventListener("click", slider_GD);
 
@@ -281,6 +269,8 @@ function slider_FeWD(){
 
 
 
+
+/////// click event dots on dropdown menu /////////////
 
 
 menuGD.addEventListener("click", openGD);
@@ -353,7 +343,10 @@ function openRes(){
 
 
 
-/////// contact modal //////////
+
+
+
+//////////// contact modal /////////////////
 
 menuContact.addEventListener("click", openContactModal);
 
@@ -368,7 +361,12 @@ function closeContactModal(){
     document.getElementById("GDModal").style.display = "none";
 };
 
-/////// timeout welcome modal //////////
+
+
+
+
+
+/////// timeout welcome modal on index page //////////
 
 document.getElementById("welcomeModal").style.display = "none";
 
