@@ -27,14 +27,6 @@ let indexRightArrow = document.getElementById("indexRightArrow");
 
 let slider = document.getElementById("slider");
 
-//let menuGD = document.getElementById("menuGD");
-
-//let menuWD = document.getElementById("menuWD");
-
-//let menuFE = document.getElementById("menuFE");
-
-//let menuRes = document.getElementById("menuRes");
-
 let closeModalbutton = document.getElementById("closeModalbutton");
 
 let GDModal = document.getElementById("GDModal");
@@ -46,15 +38,6 @@ let closeWelcomeModal = document.getElementById("closeWelcomeModal");
 let welcomeModal = document.getElementById("welcomeModal");
 
 let contactButtonModal = document.getElementById("contactButtonModal");
-
-let indexSliderDots = document.getElementById("indexSliderDots");
-
-let indexSliderDot1 = document.getElementById("indexSliderDot1");
-
-let indexSliderDot2 = document.getElementById("indexSliderDot2");
-
-let indexSliderDot3 = document.getElementById("indexSliderDot3");
-
 
 let GDthumbnailGrid = document.getElementById("GDthumbnailGrid");
 
@@ -90,6 +73,7 @@ document.getElementById("FeWDthumbnailGrid");
  }
 
 
+
 indexLeftArrow.addEventListener("click", goLeft);
 indexRightArrow.addEventListener("click", goRight);
 
@@ -117,56 +101,6 @@ function goRight(){
 
 window.onload = displayTitle(index)
 window.onload = displayGrid(index)
-
-
-
-
-
-
-/////// click event dots on index slider /////////////
-
-indexSliderDot1.addEventListener("click", slider_GD);
-
-indexSliderDot2.addEventListener("click", slider_WD);
-
-indexSliderDot3.addEventListener("click", slider_FeWD);
-
-function slider_GD(){
-    
-        document.getElementById("indexSubhead1").style.display = "block";
-        document.getElementById("indexSubhead2").style.display = "none";
-        document.getElementById("indexSubhead3").style.display = "none";   
-        document.getElementById("GDthumbnailGrid").style.display = "block";
-        document.getElementById("WDthumbnailGrid").style.display = "none";
-        document.getElementById("FeWDthumbnailGrid").style.display = "none";
-        document.getElementById("indexSliderDot1").style.backgroundColor = "#4F3E60";
-        document.getElementById("indexSliderDot2").style.backgroundColor = "#707070";
-        document.getElementById("indexSliderDot3").style.backgroundColor = "#707070";
-};
-
-function slider_WD(){
-        document.getElementById("indexSubhead1").style.display = "none";
-        document.getElementById("indexSubhead2").style.display = "block";
-        document.getElementById("indexSubhead3").style.display = "none";
-        document.getElementById("GDthumbnailGrid").style.display = "none";
-        document.getElementById("WDthumbnailGrid").style.display = "block";
-        document.getElementById("FeWDthumbnailGrid").style.display = "none";
-        document.getElementById("indexSliderDot1").style.backgroundColor = "#707070";
-        document.getElementById("indexSliderDot2").style.backgroundColor = "#4F3E60";
-        document.getElementById("indexSliderDot3").style.backgroundColor = "#707070";
-};
-
-function slider_FeWD(){
-        document.getElementById("indexSubhead1").style.display = "none";
-        document.getElementById("indexSubhead2").style.display = "none";
-        document.getElementById("indexSubhead3").style.display = "block";
-        document.getElementById("GDthumbnailGrid").style.display = "none";
-        document.getElementById("WDthumbnailGrid").style.display = "none";
-        document.getElementById("FeWDthumbnailGrid").style.display = "block";
-        document.getElementById("indexSliderDot1").style.backgroundColor = "#707070";
-        document.getElementById("indexSliderDot2").style.backgroundColor = "#707070";
-        document.getElementById("indexSliderDot3").style.backgroundColor = "#4F3E60";
-};
 
 
 

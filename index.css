@@ -147,13 +147,13 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 2.5vw;
-    width: 25%;
+    width: 27%;
     float: right;
     right: 0px;
     margin-top:-1vw;
     position: absolute;
     display:none;
-    
+    z-index: 99999;
 }
 #ddList {
     list-style-type: none;
@@ -164,6 +164,16 @@ body {
 .ddItem:hover {
     color:#655674;
 }
+#DDList {
+    list-style-type: none;
+}
+.DDItem {
+    margin:1.5vw 11%;
+    list-style-type: none;
+}
+.DDItem:hover {
+    color:#655674;
+}
 #welcomeModal {
     width:40vw;
     height: 27vw;
@@ -172,8 +182,8 @@ body {
     position: absolute;
     z-index:1;
     margin-top: 12vw;
-    margin-left: 35vw;
-    margin-right: 10vw;
+    margin-left: 30vw;
+    margin-right: 30vw;
     display:none;
 }
 #closeWelcomeModal {
