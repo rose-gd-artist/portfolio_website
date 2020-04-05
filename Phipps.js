@@ -24,6 +24,8 @@ let closeModalbutton = document.getElementById("closeModalbutton");
 
 let GDModal = document.getElementById("GDModal");
 
+let contactModal = document.getElementById("contactModal");
+
 let menuContact = document.getElementById("menuContact");
 
 let contactButtonModal = document.getElementById("contactButtonModal");
@@ -37,14 +39,14 @@ let contactButtonModal = document.getElementById("contactButtonModal");
 menuContact.addEventListener("click", openContactModal);
 
 function openContactModal(){
-    document.getElementById("GDModal").style.display = "block";
+    document.getElementById("contactModal").style.display = "block";
 };
 
 
 closeModalbutton.addEventListener("click", closeContactModal);
 
 function closeContactModal(){
-    document.getElementById("GDModal").style.display = "none";
+    document.getElementById("contactModal").style.display = "none";
 };
 
 

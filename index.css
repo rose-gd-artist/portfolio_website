@@ -832,92 +832,12 @@ span.adj {
     display:none;
 }
 
-#GDModal {
-    width:30vw;
-    height: 44vw;
-    background-color:#cdcdcd;
-    color:#000;
-    position: absolute;
-    z-index:9999999999999999999;
-    margin-top: 5vw;
-    margin-left: 35vw;
-    margin-right: 10vw;
-    display:none;
-}
-input {
-    display:block;
-    color: #888888;
-    width: 21vw;
-    height: 1.5vw;
-    margin-left:4.5vw;
-    margin-bottom: 1vw;
-    padding-left: .5vw;
-    border-radius: .25vw;
-}
-#zip {
-    display:block;
-    color: #888888;
-    width: 10vw;
-    height: 1.5vw;
-    margin-left:4.5vw;
-    margin-bottom: 1vw;
-    padding-left: .5vw;
-    border-radius: .25vw;
-}
-label {
-    display:block;
-    color: #888888;
-    margin-left:4.5vw;
-}
-#stateList {
-    margin-left:4.5vw;
-    margin-bottom: 1vw;
-}
-placeholder {
-    color: #888888;
-}
-#submit {
-    width: 6vw;
-    height: 2.5vw;
-    font-size: 1vw;
-    background-color:#4F3E60;
-    color: #cdcdcd;
-    margin-right: 4.5vw;
-    border-radius: .25vw;
-    float:right;
-}
-#reset {
-    width: 6vw;
-    height: 2.5vw;
-    font-size: 1vw;
-    background-color:#888888;
-    color: #cdcdcd;
-    margin-left: 4.5vw;
-    border-radius: .25vw;
-    float:left;
-}
-#reset:hover {
-    background-color:#fff;
-    color: #4F3E60;
-}
-#submit:hover {
-    background-color:#a694b9;
-    color: #fff;
-}
 #closeModalbutton {
     width:2vw;
     height:2vw;
     padding-right:1vw;
     padding-top:1vw;
     float:right;
-}
-#descContainer {
-    margin-left: 10vw;
-    margin-right: 10vw;
-    font-size: 1.25vw;
-    text-align: center;
-    color:#888888;
-    margin-bottom: 1vw;
 }
 
 #contactModal {
@@ -953,6 +873,20 @@ placeholder {
     color:#888888;
 }
 #emailBox a:hover {
+    color:#fff;
+}
+
+#aboutEmail {
+    font-size: 2.5vw;
+    text-align: left;
+    color:#cdcdcd;
+}
+
+#aboutEmail a:link {
+    text-decoration: none;
+    color:#cdcdcd;
+}
+#aboutEmail a:hover {
     color:#fff;
 }
 
