@@ -3,7 +3,7 @@
 
 
 let clock = document.getElementById("clock");
-let color = document.getElementById("outermostDiv");
+let colorClockHolder = document.getElementById("clockHolder");
 let hourColor = document.getElementById("hourColor");
 let minuteColor = document.getElementById("minuteColor");
 let secondColor = document.getElementById("secondColor");
@@ -21,7 +21,7 @@ function clockTime() {
   document.getElementById("minutes").innerText = m;
   document.getElementById("seconds").innerText = s;
   let randomColor = Math.floor(Math.random()*16777215).toString(16);
-  document.body.style.backgroundColor = "#"+randomColor;
+  document.getElementById("clockHolder").style.backgroundColor = "#"+randomColor;
   document.getElementById("minuteColor").style.backgroundColor = "#"+randomColor;
     
   setTimeout("clockTime()", 1000)
