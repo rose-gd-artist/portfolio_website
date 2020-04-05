@@ -35,12 +35,6 @@ function descriptionOpen(){
     }
 }
 
-//document.getElementById("infoClose").onclick = function() {descriptionClose()};
-//
-//function descriptionClose(){
-//    document.getElementById("infoClose").style.display = "none";
-//    document.getElementById("info_modal_godZ").style.display = "none";
-//}
 
 
 /////////////////// all my variables ///////////////////////
