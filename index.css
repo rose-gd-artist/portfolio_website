@@ -283,10 +283,36 @@ span.adj {
 #aboutHeader{
     width:90%;
     height:9vw;
-    margin-top:1vw;
-    margin-left:5%;
-    margin-right:5%;
-    margin-bottom:1vw;
+    font-size:4vw;
+    margin:2vw 28%;
+    float:left;
+    text-align: center;
+    color:#4F3E60;
+    display:block;
+}
+#GDHeader{
+    width:90%;
+    height:9vw;
+    font-size:4vw;
+    margin:2vw 5%;
+    float:left;
+    text-align: center;
+    color:#4F3E60;
+    display:block;
+}
+#WDHeader{
+    width:90%;
+    height:9vw;
+    font-size:4vw;
+    margin:2vw 28%;
+    float:left;
+    text-align: center;
+    color:#4F3E60;
+    display:block;
+}
+#FeWDHeader{
+    width:90%;
+    height:9vw;
     font-size:4vw;
     margin:2vw 28%;
     float:left;
@@ -382,6 +408,22 @@ span.adj {
 .Next {
     clear:both;
 }
+#ThumbnailGrid {
+    width:89%;
+    clear:both;
+    margin-top:6vw;
+    margin-left: 14%;
+    margin-right: 14%;
+    display:block;
+}
+.Grid {
+    width:15vw;
+    height:15vw;
+    background-color:#fff;
+    float:left;
+    margin-right: 10vw;
+    margin-bottom: 8vw;
+}
 #aboutHeader{
     width:75%;
     height:9vw;
@@ -458,6 +500,9 @@ span.adj {
     margin-right: 1vw;
     margin-top: 1vw;
     display: inline-block;
+}
+#grid_row4_3 {
+    display:none;
 }
 
 #GDModal {
