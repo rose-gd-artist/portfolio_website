@@ -227,7 +227,13 @@ body {
     font-size: 1.75vw;
     margin-bottom: 7vw;
     padding:.75vw 1.5vw;
+    float:left;
     display:block;
+}
+#git_button {
+    width:4vw;
+    float:right;
+    display: inline;
 }
 #infoClose {
     width: 1vw;
@@ -239,7 +245,7 @@ body {
     background-color:#aeaeae;
     position: absolute;
     z-index:1;
-    margin-top: -7vw;
+    margin-top: 4vw;
     display:none;
 }
 #infoContainer_godZ {
@@ -658,6 +664,8 @@ placeholder {
     color:#888888;
     margin-bottom: 1vw;
 }
+
+
 
 
 #footer {
