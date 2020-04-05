@@ -301,10 +301,10 @@ span.adj {
     display:block;
 }
 #WDHeader{
-    width:90%;
+    width:72%;
     height:9vw;
     font-size:4vw;
-    margin:2vw 28%;
+    margin:2vw 14%;
     float:left;
     text-align: center;
     color:#4F3E60;
@@ -314,7 +314,7 @@ span.adj {
     width:90%;
     height:9vw;
     font-size:4vw;
-    margin:2vw 28%;
+    margin:2vw 5%;
     float:left;
     text-align: center;
     color:#4F3E60;
@@ -354,6 +354,14 @@ span.adj {
     margin-right: 14%;
     display:block;
 }
+#GD_Grid {
+    width:89%;
+    clear:both;
+    margin-top:6vw;
+    margin-left: 14%;
+    margin-right: 14%;
+    display:block;
+}
 .GDpicGrid {
     width:15vw;
     height:15vw;
@@ -370,6 +378,14 @@ span.adj {
     margin-right: 14%;
     display:none;
 }
+#WD_Grid {
+    width:89%;
+    clear:both;
+    margin-top:6vw;
+    margin-left: 14%;
+    margin-right: 14%;
+    display:block;
+}
 .WDpicGrid {
     width:15vw;
     height:15vw;
@@ -385,6 +401,14 @@ span.adj {
     margin-left: 14%;
     margin-right: 14%;
     display:none;
+}
+#FeWD_Grid {
+    width:89%;
+    clear:both;
+    margin-top:6vw;
+    margin-left: 14%;
+    margin-right: 14%;
+    display:block;
 }
 .FeWDpicGrid {
     width:15vw;
