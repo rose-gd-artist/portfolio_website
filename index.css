@@ -268,11 +268,14 @@ body {
     padding-top: 1vw;
     padding-bottom: 10vw;
 }
-#secondColor {
-    width:35vw;
-    height:35vw;
-    background-color:#fff;
+#hourColor {
+    width:45vw;
+    height:45vw;
+    background-color:#000;
     display:block;
+    margin-top: 10vw;
+    margin-left: 11.5vw;
+    margin-right: 11.5vw;
     border-radius: 50%;
     padding: 2.5vw;
 }
@@ -284,14 +287,11 @@ body {
     border-radius: 50%;
     padding: 2.5vw;
 }
-#hourColor {
-    width:45vw;
-    height:45vw;
-    background-color:#000;
+#secondColor {
+    width:35vw;
+    height:35vw;
+    background-color:#fff;
     display:block;
-    margin-top: 10vw;
-    margin-left: 11.5vw;
-    margin-right: 11.5vw;
     border-radius: 50%;
     padding: 2.5vw;
 }
