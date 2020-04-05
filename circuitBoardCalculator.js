@@ -1,32 +1,4 @@
-//////////// this makes the clock work ////////////////
 
-
-
-let clock = document.getElementById("clock");
-let colorClockHolder = document.getElementById("clockHolder");
-let hourColor = document.getElementById("hourColor");
-let minuteColor = document.getElementById("minuteColor");
-let secondColor = document.getElementById("secondColor");
-
-function clockTime() {
-  let d = new Date();
-  let h = d.getHours();
-  h = (h>12 ? h-12 : (h!=0 ? h : 12)).toString().padStart(2, '0');
-  let m = d.getMinutes().toString().padStart(2, '0');
-  let s = d.getSeconds().toString().padStart(2, '0');
-  let AMorPM = d.getHours()<12 ? "AM" : "PM";
-
-  document.getElementById("AMorPM").innerText = AMorPM;
-  document.getElementById("hours").innerText = h;
-  document.getElementById("minutes").innerText = m;
-  document.getElementById("seconds").innerText = s;
-  let randomColor = Math.floor(Math.random()*16777215).toString(16);
-  document.getElementById("clockHolder").style.backgroundColor = "#"+randomColor;
-  document.getElementById("minuteColor").style.backgroundColor = "#"+randomColor;
-    
-  setTimeout("clockTime()", 1000)
-}
-clockTime()
 
 
 ///////// dropdown menu controls /////////////
@@ -67,9 +39,6 @@ function descriptionOpen(){
 }
 
 
-
-
-
 /////////////////// all my variables ///////////////////////
 
 let closeModalbutton = document.getElementById("closeModalbutton");
@@ -100,6 +69,56 @@ closeModalbutton.addEventListener("click", closeContactModal);
 function closeContactModal(){
     document.getElementById("contactModal").style.display = "none";
 };
+
+
+///////// calculator code  /////////////////
+
+
+var calcScreen1 = document.getElementById("calcScreen1");
+
+var calcScreen2 = document.getElementById("calcScreen2");
+
+var calcScreen3 = document.getElementById("calcScreen3");
+
+var addition = document.getElementById("add");
+
+var subtract = document.getElementById("subtract");
+
+var multiply = document.getElementById("multiply");
+
+var divide = document.getElementById("divide");
+
+var equals = document.getElementById("equals");
+
+var mathOperators;
+
+addition.addEventListener("click", function () {
+	mathOperators = "+"
+})
+
+subtract.addEventListener("click", function () {
+	mathOperators = "-"
+})
+
+multiply.addEventListener("click", function () {
+	mathOperators = "*"
+})
+
+divide.addEventListener("click", function () {
+	mathOperators = "/"
+})
+
+equals.addEventListener("click", function () {
+	if(mathOperators == "+") {
+		calcScreen3.innerHTML = (parseInt(calcScreen1.value) + parseInt(calcScreen2.value))
+	} else if (mathOperators == "-") {
+		calcScreen3.innerHTML = (parseInt(calcScreen1.value) - parseInt(calcScreen2.value))
+	} else if (mathOperators == "*") {
+		calcScreen3.innerHTML = (parseInt(calcScreen1.value) * parseInt(calcScreen2.value))
+	} else if (mathOperators == "/") {
+		calcScreen3.innerHTML = (parseInt(calcScreen1.value) / parseInt(calcScreen2.value))
+	} 
+})
 
 
 

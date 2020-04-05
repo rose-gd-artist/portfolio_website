@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>hddn creative - index page</title>
+	<title>hddn creative - digital clock page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" href="https://use.typekit.net/aiq5jdr.css"><!--adobemrseavesOTfonts-->
     <link rel="stylesheet" href="https://use.typekit.net/aiq5jdr.css"><!--adobefuturafonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Architects+Daughter|Covered+By+Your+Grace|Gamja+Flower|Give+You+Glory|Mansalva|Mrs+Saint+Delafield|Nanum+Pen+Script|Poor+Story&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo|BenchNine:300,400,700|Chivo:300,300i,400,400i,700,700i,900,900i|Concert+One|Itim|Khand:300,400,500,600,700|Lalezar|Neucha|Quantico:400,400i,700,700i|Sanchez:400,400i|Special+Elite|Unica+One&display=swap" rel="stylesheet">
 </head>
 <body>
 <div id="wrapper">
@@ -66,19 +69,69 @@
     <img id="infoClose" href="images/closeX.svg" src="images/closeX.svg" alt="close description of artwork button">    
     </div><!--end of info_button-->
         
+    <div id="code_button">
+    <a href="https://github.com/rose-gd-artist/Front-end_UARTS"><img id="git_button" href="images/githubIcon_gray.png" src="images/githubIcon_gray.png" alt="Link to github button"> </a>   
+    </div><!--end of info_button-->
+        
     <div id="info_modal_godZ">
     <div id="infoContainer_godZ">
-    This is an early concept layout<br/>
-    for a news based website project.<br/>
-    It was created with Adobe Photoshop.<br/>
+    This project was to create a<br/>
+    double input screen calculator<br/>
+    with the addition, subtraction,<br/>
+    multiplication and division symbols.<br/>
+    Adobe Illustrator, HTML5, CSS3 and<br/>
+    Javascript were used to create this.<br/>
     </div><br/><!--end of infoContainer_godZ-->
     </div><!--end of info_modal-->
+         
         
-    <div class="holder">    
-    <img href="images/godZarticle.png" src="images/godZarticle.png" alt="godzilla movie article concept art">
-    </div><!--end of holder--> 
         
     </div><!--end of picFrame_plain-->
+        
+            <div class="holder calculatorBox" id="calcHolder">    
+            <div id="calcBox">
+    
+
+
+
+                <img id="calculator" href="images/calcTransparent.png" alt="Circuit Board Calculator" src="images/calcTransparent.png">
+
+
+            <input type="text" id="calcScreen1">
+
+
+            <div class="buttonGrid"> 
+
+                <div class="button spacer" id="add"><img class="before" href="images/plusBefore.svg" src="images/plusBefore.svg"><img class="after" href="images/plusAfter.svg" src="images/plusAfter.svg"></div>
+
+                <div class="button spacer" id="subtract"><img class="before" href="images/minusBefore.svg" src="images/minusBefore.svg"><img class="after" href="images/minusAfter.svg" src="images/minusAfter.svg"></div>
+
+                <div class="button spacer" id="multiply"><img class="before" href="images/multiplyBefore.svg" src="images/multiplyBefore.svg"><img class="after" href="images/multiplyAfter.svg" src="images/multiplyAfter.svg"></div>
+
+                <div class="button" id="divide"><img class="before" href="images/divideBefore.svg" src="images/divideBefore.svg"><img class="after" href="images/divideAfter.svg" src="images/divideAfter.svg"></div>
+
+            </div><!--end of buttonGrid-->
+
+            <input type="text" id="calcScreen2">
+
+
+
+                <div class="button" id="equals">
+
+
+                <img class="before" href="images/equalsBefore.svg" src="images/equalsBefore.svg"><img class="after" href="images/equalsAfter.svg" src="images/equalsAfter.svg">
+
+                </div>
+
+
+
+                <div id="calcScreen3"></div> 
+
+
+
+            </div><!--end of calcBox-->
+
+        </div><!--end of holder-->
     
     
     
@@ -101,7 +154,7 @@
     
 </div><!--end of wrapper-->    
     
-<script type="text/javascript" src="godZarticle.js"> 
+<script type="text/javascript" src="circuitBoardCalculator.js"> 
 </script>  
 </body>
 </html>

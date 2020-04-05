@@ -244,7 +244,7 @@ body {
 #info_modal_godZ {
     background-color:#aeaeae;
     position: absolute;
-    z-index:1;
+    z-index:999999;
     margin-top: 4vw;
     display:none;
 }
@@ -382,6 +382,138 @@ body {
     margin-top: 2.5vw;
     margin-left:2%;
 }
+
+#calcBox {
+    margin:0px;
+    padding:0px;
+    width:72%;
+    margin-top: 10vw;
+    margin-left: 14%;
+    margin-right: 14%;
+    margin-bottom: 10vw;
+    text-align: center;
+}
+
+#calculator {
+    position: relative;
+    z-index: 55;
+    display: block;
+    width: 40vw;
+    filter: drop-shadow(-.5vw .5vw 1vw #152D18);
+    margin-left: 13vw;
+    margin-right: 13vw;
+
+}
+#calcScreen1 {
+    width:32vw;
+    height:7.5vw;
+    background-color: #808184;
+    color:#66f539;
+    border-radius: .5vw;
+    position: relative;
+    z-index: 66;
+    display: block;
+    margin-top: -50.5vw;
+    margin-left: 16.8vw;
+    text-align: center;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    font-size: 3vw;
+    border: 0px solid #808184;
+}
+#calcScreen2 {
+    width:32vw;
+    height:7.5vw;
+    background-color: #808184;
+    color:#66f539;
+    border-radius: .5vw;
+    position: relative;
+    z-index: 66;
+    display: block;
+    margin-top: 3.2vw;
+    margin-left: 16.8vw;
+    text-align: center;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    font-size: 3vw;
+    border: 0px solid #808184;
+}
+#calcScreen3 {
+    width:32vw;
+    height:7.5vw;
+    background-color: #808184;
+    color:#66f539;
+    border-radius: .5vw;
+    position: relative;
+    z-index: 66;
+    display: block;
+    margin-top: 11.35vw;
+    margin-left: 16.8vw;
+    text-align: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    font-size: 3vw;
+    border: 0px solid #808184;
+    font-weight: 400;
+}
+.buttonGrid {
+    margin-top:3.5vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    width: 26vw;
+    text-align: center;
+    position: relative;
+    z-index: 85;
+    overflow: hidden;
+
+}
+.spacer {
+    margin-right: 1.3vw;
+}
+.button {
+    position: relative;
+    z-index: 80;
+    float: left;
+    width: 5.5vw;
+    height: 5.5vw;
+    border-radius:50%;
+}
+
+
+
+#add .after, 
+#subtract .after, 
+#multiply .after, 
+#divide .after,
+#equals .after {
+    display:none;
+}
+#add:hover  .before,
+#subtract:hover  .before,
+#multiply:hover  .before,
+#divide:hover  .before,
+#equals:hover  .before {
+    display:none;
+
+}
+#add:hover .after,
+#subtract:hover .after,
+#multiply:hover .after,
+#divide:hover .after,
+#equals:hover .after{
+    display:block;
+}
+
+#equals {
+    margin-top:2.15vw;
+    margin-left:30.25vw;
+    margin-right:30.25vw;
+    text-align: center;
+    position: relative;
+    z-index: 85;
+    border: 0px solid #808184;
+}
+
 
 
 #pageContent {
@@ -706,7 +838,7 @@ span.adj {
     background-color:#cdcdcd;
     color:#000;
     position: absolute;
-    z-index:1;
+    z-index:9999999999999999999;
     margin-top: 5vw;
     margin-left: 35vw;
     margin-right: 10vw;
@@ -788,6 +920,41 @@ placeholder {
     margin-bottom: 1vw;
 }
 
+#contactModal {
+    width:30vw;
+    background-color:#cdcdcd;
+    color:#000;
+    position: absolute;
+    z-index:9999999999999999999;
+    margin-top: 5vw;
+    margin-left: 35vw;
+    margin-right: 10vw;
+    display:none;
+}
+#contactContainer {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-size: 2vw;
+    text-align: center;
+    color:#888888;
+    margin-bottom: 1vw;
+}
+#emailBox {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 3vw;
+    font-size: 1.5vw;
+    text-align: center;
+    color:#888888;
+    padding-bottom: 1vw;
+}
+#emailBox a:link {
+    text-decoration: none;
+    color:#888888;
+}
+#emailBox a:hover {
+    color:#fff;
+}
 
 
 
