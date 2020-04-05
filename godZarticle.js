@@ -14,13 +14,36 @@ function menuClose(){
     document.getElementById("menu1").style.display = "block";
     document.getElementById("menu2").style.display = "none";
     document.getElementById("dropdown").style.display = "none";
-} 
+}
 
 
+//////////// Description drop down ////////////////
+
+let infoClose = document.getElementById("infoClose");
+
+let info_button = document.getElementById("info_button");
+
+document.getElementById("info_button").onclick = function() {descriptionOpen()};
+
+function descriptionOpen(){
+    if(infoClose.style.display === "none"){
+        document.getElementById("infoClose").style.display = "block";
+        document.getElementById("info_modal_godZ").style.display = "block";
+    } else {
+       document.getElementById("infoClose").style.display = "none";
+       document.getElementById("info_modal_godZ").style.display = "none"; 
+    }
+}
+
+//document.getElementById("infoClose").onclick = function() {descriptionClose()};
+//
+//function descriptionClose(){
+//    document.getElementById("infoClose").style.display = "none";
+//    document.getElementById("info_modal_godZ").style.display = "none";
+//}
 
 
 /////////////////// all my variables ///////////////////////
-
 
 let closeModalbutton = document.getElementById("closeModalbutton");
 
@@ -29,7 +52,6 @@ let GDModal = document.getElementById("GDModal");
 let menuContact = document.getElementById("menuContact");
 
 let contactButtonModal = document.getElementById("contactButtonModal");
-
 
 
 
