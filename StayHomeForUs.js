@@ -14,7 +14,6 @@ function menuClose(){
     document.getElementById("menu1").style.display = "block";
     document.getElementById("menu2").style.display = "none";
     document.getElementById("dropdown").style.display = "none";
-    
 }
 
 
@@ -35,9 +34,6 @@ function descriptionOpen(){
        document.getElementById("info_modal_godZ").style.display = "none"; 
     }
 }
-
-
-
 
 
 
