@@ -628,26 +628,34 @@ span.adj {
     float:right;
     margin:4vw 5%;
 }
-#indexSliderDots {
-    clear:both;
-    margin-left:45%;
-    margin-right:45%;
-    margin-top:-2vw;
+
+
+
+#WD_picBox {
+    width:100%;
+    margin-bottom:1vw;
+    display:block;
 }
-#indexSliderDot1, #indexSliderDot2,
-#indexSliderDot3, #indexSliderDot4 {
-    width: 1vw;
-    height: 1vw;
-    border-radius: 50%;
-    background-color:#707070;
-    margin-right: 1vw;
+
+.H_Site{
+    font-size:4vw;
+    text-align: center;
+    display:block;
+}
+.hershey {
+    margin-bottom:5vw;
+}
+.hersheyHead {
+    clear: both;
     float:left;
-    
+    font-size:4vw;
+    font-family: mrs-eaves, serif;
+    font-weight: 700;
+    font-style: italic;
+    color:#726a79;
+    margin-bottom: 1vw;
 }
-#indexSliderDot1:hover, #indexSliderDot2:hover,
-#indexSliderDot3:hover, #indexSliderDot4:hover {
-    background-color:#4F3E60;
-}
+
 
 #GDthumbnailGrid {
     width:89%;
@@ -721,6 +729,7 @@ span.adj {
     margin-right: 10vw;
     margin-bottom: 8vw;
 }
+
 #MVPcalcThumb, #clockThumb, #gWebThumb, #stayHomeThumb, #saveOceanLogoThumb, #HersheyThumb, #aiThumb, #godZThumb, #kiddiecalcThumb, #phippsThumb, #floccoThumb {
     width:15vw;
     height:15vw;
@@ -728,6 +737,7 @@ span.adj {
     overflow:hidden;
     opacity: 1;
 }
+
 #MVPcalcThumb:hover, #clockThumb:hover, #gWebThumb:hover, #stayHomeThumb:hover, #saveOceanLogoThumb:hover, #HersheyThumb:hover, #aiThumb:hover, #godZThumb:hover, #kiddiecalcThumb:hover, #phippsThumb:hover, #floccoThumb:hover {
     opacity: .7;
 }
@@ -897,6 +907,7 @@ span.adj {
     width:100%;
     background-color:#000;
     color: #cdcdcd;
+    bottom:0px;
 }
 #linkFooterContainer {
     margin: 2vw 45%;
