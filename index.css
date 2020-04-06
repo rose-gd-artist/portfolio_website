@@ -900,6 +900,16 @@ span.adj {
     color:#fff;
 }
 
+.bottle {
+    clear:both;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.bottle img {
+    width:100%;
+}
+
 
 
 #footer {
