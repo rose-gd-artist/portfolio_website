@@ -628,6 +628,14 @@ span.adj {
     float:right;
     margin:4vw 5%;
 }
+.subheadSwop a {
+    text-decoration: none;
+    color:#4F3E60;
+}
+.subheadSwop a:hover {
+    text-decoration: none;
+    color:#fff;
+}
 
 
 
