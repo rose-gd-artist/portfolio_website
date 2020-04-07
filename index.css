@@ -663,6 +663,66 @@ span.adj {
     color:#726a79;
     margin-bottom: 1vw;
 }
+#picFrame_4double {
+    width:72%;
+    margin-left: 14%;
+    margin-right: 14%;
+}
+#AI_picBox {
+    padding:0;
+    width:100%;
+    margin-bottom:1vw;
+}
+.AIHead {
+    clear: both;
+    font-size:4vw;
+    font-family: mrs-eaves, serif;
+    font-weight: 700;
+    font-style: italic;
+    color:#726a79;
+    margin-bottom: 1vw;
+
+}
+.desktopV {
+    margin-bottom:5vw;
+}
+.desktopV img {
+    width: 80%;
+}
+.cellSize {
+    display:flex;
+    margin-bottom:5vw;
+    align-items: flex-start;
+    
+}
+.cellSize img {
+    width: 30%;
+}
+.mobile_site {
+    margin:0 auto;
+}
+.cellSize_SOO {
+    display:block;
+    margin-bottom:5vw;
+    
+}
+.cellSize_SOO img {
+    width: 30%;
+}
+.mobile_site_SOO {
+    margin:0 auto;
+}
+.AIHead_M {
+    clear: both;
+    font-size:4vw;
+    font-family: mrs-eaves, serif;
+    font-weight: 700;
+    font-style: italic;
+    color:#726a79;
+    margin-bottom: 1vw;
+    margin-left:1.4vw;
+
+}
 
 
 #GDthumbnailGrid {
