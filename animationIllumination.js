@@ -50,6 +50,26 @@ function descriptionOpen(){
 
 
 
+//////////// Description drop down for mobile ////////////////
+
+let infoClose_M = document.getElementById("infoClose_M");
+
+let info_button_M = document.getElementById("info_button_M");
+
+document.getElementById("info_button_M").onclick = function() {descriptionMobileOpen()};
+
+function descriptionMobileOpen(){
+    if(infoClose_M.style.display === "none"){
+        document.getElementById("infoClose_M").style.display = "block";
+        document.getElementById("info_modal_godZ_M").style.display = "block";
+    } else {
+       document.getElementById("infoClose_M").style.display = "none";
+       document.getElementById("info_modal_godZ_M").style.display = "none"; 
+    }
+}
+
+
+
 
 
 

@@ -271,7 +271,6 @@ body {
     width:100%;
 }
 
-
 #clockHolder {
     width:72%;
     margin-left: 14%;
@@ -527,7 +526,7 @@ body {
 }
 
 
-.intro {
+#intro {
     font-size:3.5vw;
     font-family:  mrs-eaves, serif;
     font-weight: 700;
@@ -640,7 +639,15 @@ span.adj {
     color:#fff;
 }
 
-
+#slideLeft_FEmobile {
+    display: none;
+}
+.slideLeft_M {
+    height: 2vw;
+    margin:4vw 5%;
+    float:left;
+    display:none;
+}
 
 #WD_picBox {
     width:100%;
@@ -690,7 +697,7 @@ span.adj {
     margin-bottom:5vw;
 }
 .desktopV img {
-    width: 80%;
+    width: 100%;
 }
 .cellSize {
     display:flex;
@@ -984,7 +991,9 @@ span.adj {
 .bottle img {
     width:100%;
 }
-
+#picFrame_plain_M {
+    display: none;
+}
 
 
 #footer {
@@ -1029,6 +1038,15 @@ span.adj {
 
 
 @media only screen and (max-width: 400px) {
+    
+        #wrapper {
+            width:100%;
+            margin:0;
+    }
+    
+        #index_mobile {
+            background-color: #a5a5a5;
+    }
         #navBar {
             height:20vw;
             margin:0 auto;
@@ -1114,10 +1132,12 @@ span.adj {
             padding-right:3%;
             padding-top: 6vw;
             padding-bottom: 6vw;
+            
     }
-        .intro {
+        #intro {
             font-size:7.5vw;
-            padding-left:11%;
+            padding-left:5%;
+            color:#ddd;
     }
         span.adj {
             font-size:6.5vw;
@@ -1135,7 +1155,7 @@ span.adj {
             margin-left:5%;
             margin-right:5%;
             margin-bottom:1vw;
-            border:1px solid #000;
+            text-align: left;
     }
         .slideLeft1 {
             height: 6vw;
@@ -1143,6 +1163,7 @@ span.adj {
             margin-left:0%;
             margin-right:0%;
             margin-bottom:6vw;
+            display: none;
     }
         .slideLeft_FEmobile {
             height: 6vw;
@@ -1157,6 +1178,7 @@ span.adj {
             margin-left:0%;
             margin-right:0%;
             margin-bottom:2vw;
+            text-align: left;
     }
         .num2{
             font-size:8vw;
@@ -1164,14 +1186,16 @@ span.adj {
             margin-left:0%;
             margin-right:0%;
             margin-bottom:2vw;
+            text-align: left;
     }
         .num3{
-            font-size:7.55vw;
-            margin-top:-19vw;
+            font-size:6.75vw;
+            margin-top:2vw;
             margin-left:0%;
             margin-right:0%;
             margin-bottom:2vw;
             line-height: 9vw;
+            text-align: left;
     }
         .slideRight {
             height: 6vw;
@@ -1183,10 +1207,11 @@ span.adj {
     
         #slideRight_FEmobile {
             height: 6vw;
-            margin-top:-13vw;
+            margin-top:4vw;
             margin-left:0%;
             margin-right:0%;
             margin-bottom:4vw;
+            float: right;
     }
 
     
@@ -1323,6 +1348,7 @@ span.adj {
             margin-left: 10%;
             margin-right: 10%;
             font-size: 5vw;
+            display: block;
     }
 
         .aboutHead_M {
@@ -1400,22 +1426,20 @@ span.adj {
     }
 
         #info_button {
-            width:30vw;
+            width:45%;
             height: 9vw;
             background-color:#aeaeae;
             color: #787979;
-            font-size: 4vw;
+            font-size: 4.5vw;
             margin-bottom: 8vw;
             padding:1.5vw 3vw;
-            float:left;
     }
         #git_button {
             width:9vw;
-            display: inline;
     }
         #infoClose {
-            width: 2vw;
-            margin-top: 1.5vw;
+            width: 3vw;
+            margin-top: 1.75vw;
     }
         #info_modal_godZ {
             margin-top: 9vw;
@@ -1528,12 +1552,149 @@ span.adj {
             margin-left:4%;
     }
     
+   /* calculator page adjustments */ 
+    
+        #calcBox {
+            margin:0px;
+            padding:0px;
+            margin-top: 10vw;
+            margin-bottom: 10vw;
+    }
+
+        #calculator {
+            width: 100%;
+            filter: drop-shadow(-1% 1% 2% #152D18);
+
+    }
+        #calcScreen1 {
+            width:80%;
+            height:13.15vw;
+            border-radius: .8vw;
+            margin-top: -85.5vw;
+            margin-left: 19.3vw;
+            padding-top: 2vw;
+            padding-bottom: 2vw;
+            font-size: 7vw;
+    }
+        #calcScreen2 {
+            width:80%;
+            height:13.15vw;
+            border-radius: .8vw;
+            margin-top: 5.5vw;
+            margin-left: 19.3vw;
+            padding-top: 2vw;
+            padding-bottom: 2vw;
+            font-size: 7vw;
+
+    }
+        #calcScreen3 {
+            width:80%;
+            height:13.15vw;
+            border-radius: .8vw;
+            margin-top: 18.85vw;
+            margin-left: 19.3vw;
+            padding-top: 3vw;
+            padding-bottom: 3vw;
+            font-size: 7vw;
+
+    }
+        .buttonGrid {
+            margin-top:6.5vw;
+            margin-left: 38%;
+            width: 86vw;
+
+
+    }
+        .spacer {
+            margin-right: 3.4vw;
+    }
+        .button {
+            width: 8vw;
+            height: 8vw;
+    }
+
+        #equals {
+            margin-top:5.65vw;
+            margin-left:63.5%;
+    }
     
     
     
+   /* hershey static page and animation illumination page adjustments */ 
     
+        #picFrame_plain_M {
+            width:80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            display: block;
+    }
     
+        #picFrame_4double {
+            display: none;
+    }
+
     
+        .hersheyHead, .AIHead_M, .AIHead_MM {
+            clear: both;
+            font-size:7vw;
+            font-family: mrs-eaves, serif;
+            font-weight: 700;
+            font-style: italic;
+            color:#726a79;
+            margin-bottom: 2vw;
+            margin-left:1.4vw;
+    }
+    
+        .cellSize {
+            display: block;
+            width: 80%;
+            margin-bottom: -10vw;
+    }
+    
+         .cellSize_SOO {
+            display: block;
+            width: 80%;
+            margin-bottom: 11vw;
+    }
+    
+        .cellSize img {
+            margin-bottom: 11vw;
+    }
+    
+         #info_button_M {
+            width:45%;
+            height: 9vw;
+            background-color:#aeaeae;
+            color: #787979;
+            font-size: 4.5vw;
+            margin-bottom: 8vw;
+            padding:1.5vw 3vw;
+            float:left;
+            display:block;
+    }
+        #infoClose_M {
+            width: 3vw;
+            float:right;
+            margin-top: 1.75vw;
+            display:none;
+    }
+        #info_modal_godZ_M {
+            background-color:#aeaeae;
+            position: absolute;
+            z-index:9999;
+            margin-top: 9vw;
+            display:none;
+    }
+        #infoContainer_godZ_M {
+            margin-top:4vw;
+            margin-left: 5vw;
+            margin-right: 5vw;
+            font-size: 5vw;
+            margin-bottom: 2vw;
+            width:65vw;
+            text-align: left;
+            color:#787979;
+    }
     
     
     

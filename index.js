@@ -54,25 +54,27 @@ document.getElementById("FeWDthumbnailGrid");
 
 //////////////// slider on index page ///////////////
 
- let subheads = document.getElementsByClassName("subheadSwop");
+     indexLeftArrow.style.display = "block";
 
- let sliderIndex = document.getElementsByClassName("sliderIndex");
+     let subheads = document.getElementsByClassName("subheadSwop");
 
- let index = 0;
+     let sliderIndex = document.getElementsByClassName("sliderIndex");
 
- function displayTitle (number) {
-  for(let i = 0; i<subheads.length;i++) {
-    subheads[i].style.display = "none"   
-  }
-  subheads[number].style.display = 'block'
- }
+     let index = 0;
 
- function displayGrid (number) {
-  for(let i = 0; i<sliderIndex.length;i++) {
-    sliderIndex[i].style.display = "none"   
-  }
-  sliderIndex[number].style.display = 'block'
- }
+     function displayTitle (number) {
+      for(let i = 0; i<subheads.length;i++) {
+        subheads[i].style.display = "none"   
+      }
+      subheads[number].style.display = 'block'
+     }
+
+     function displayGrid (number) {
+      for(let i = 0; i<sliderIndex.length;i++) {
+        sliderIndex[i].style.display = "none"   
+      }
+      sliderIndex[number].style.display = 'block'
+      }
 
 
 
